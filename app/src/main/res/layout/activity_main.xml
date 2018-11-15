@@ -25,13 +25,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/txtBtnCamera"
-        app:layout_constraintBottom_toTopOf="@+id/btnPhoto"
+        app:layout_constraintBottom_toTopOf="@+id/btnGallery"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="camera"/>
 
     <Button
-        android:id="@+id/btnPhoto"
+        android:id="@+id/btnGallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -41,7 +42,8 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCamera" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCamera"
+        android:onClick="photoGallery"/>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/txtInputUrl"
